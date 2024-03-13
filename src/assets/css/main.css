@@ -1,0 +1,74 @@
+/* Defaults */
+:root {
+	--font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+	/* --font-family: -apple-system, system-ui, droid-serif, sans-serif; */
+	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+}
+
+/* Theme colors */
+:root {
+	--background-color: #fdfaf8;
+	--text-color: #22252a;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	font-size: 19.5px;
+	color: var(--text-color);
+	background-color: var(--background-color);
+}
+
+/* html {
+	overflow-y: scroll;
+} */
+
+.main-container {
+	padding: 0 1.5rem;
+	margin: 0 auto;
+	position:relative;
+	top: 109px;
+	height: calc(100vh - 117px);
+	overflow: auto;
+    scrollbar-width: thin;
+}
+
+.welcome {
+	font-weight: 300;
+    font-size: larger;
+	background-color: #f5f3f1;
+    padding: 0.1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+	.main-container {width: 100vw;}
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+	.main-container {width: 90vw;}
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+	.main-container {width: 80vw;}
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+	.main-container {width: 70vw;}
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+	.main-container {width: 60vw;}
+ } 

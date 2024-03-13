@@ -1,0 +1,30 @@
+---
+    layout: main.webc
+    pagination:
+        data: collections.posts
+        size: 10
+        alias: posts
+        reverse: true
+---
+
+<div>
+    <div class="welcome">
+        <p>Welcome home !
+            <br>
+            A single room here for code cooking pleasure without any cookie
+        </p>
+    </div>
+    <ul class="posts-list">
+        <li class="post-item" webc:for="post of collections.posts">
+            <img class="post-thumb" :src="post.data.image.path" :alt="post.data.image.alt">
+            <div class="post-infos">
+                <span @html="postDate(post.data.date)"></span>
+                <a :href="post.data.page.url.slice(1)">
+                    <span @text="post.data.title"></span>
+                </a>
+                <span @html="post.data.description"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+<link rel="stylesheet" href="../../assets/css/posts.css" webc:keep/>

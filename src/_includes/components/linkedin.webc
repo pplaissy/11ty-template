@@ -1,0 +1,7 @@
+<a  class="linkedin"
+    href="https://www.linkedin.com/in/pierreplaissy/"
+    aria-label="LinkedIn"
+    target="_blank"
+    rel="noopener noreferrer">
+    <img class="mb-1" src="assets/img/linkedin.svg" alt="LinkedIn" width="24" height="24">
+</a>

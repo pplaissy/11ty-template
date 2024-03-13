@@ -1,0 +1,16 @@
+<nav class="header">
+  <div class="avatar">
+    <img class="profile-img mr" src="assets/img/me.png" alt="me">
+    <!-- <span class="copy" @html="'&copy; ' + currentYear() + ' P. Plaissy'"></span> -->
+  </div>
+  <div class="title">
+    <div class="main">
+      <a class="nav-item mr" href="#">code crumbs...</a>
+      <linkedin></linkedin>
+    </div>
+    <div class="epigraph">
+      <span>Some code crumbs dropped along my coding &lt;path&#47;&gt;</span>
+    </div>
+  </div>
+</nav>
+<link rel="stylesheet" href="assets/css/header.css" webc:keep/>

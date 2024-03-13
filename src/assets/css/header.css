@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fdfaf8;
+    top: 0;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.avatar {
+    display: grid;
+    margin-right: 12px;
+}
+
+.copy {
+    font-size: 0.6em;
+}
+
+.epigraph {
+    font-size: 0.8em;
+}
+
+.linkedin {
+    margin-top: 4px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.mr {
+    margin-right: 2rem;
+}

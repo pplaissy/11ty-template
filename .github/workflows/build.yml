@@ -1,0 +1,39 @@
+
+name: build 11ty site
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Install dependencies & build
+        run: |
+          npm install
+          npx @11ty/eleventy
+      - uses: actions/upload-pages-artifact@v3
+
+      # Deploy the Static Site to Public Repo (GitHub Pages)
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          token:  ${{ secrets.SECRETNAME }}
+          repository-name: pplaissy/code-crumbs-site
+          branch: main # The branch the action should deploy to.
+          folder: _site # The folder the action should deploy.
+          single-commit: true
+          commit-message: "Deploy by source"

@@ -1,0 +1,20 @@
+{
+  "name": "code-crumbs",
+  "version": "1.0.0",
+  "description": "Code crumbs left behind along my coding <path>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-plugin-webc": "^0.11.2",
+    "markdown-it-attrs": "^4.1.6",
+    "moment": "^2.30.1"
+  }
+}

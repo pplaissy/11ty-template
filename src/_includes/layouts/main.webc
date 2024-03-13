@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <base webc:if="this.page.url.includes('posts')" href="../..">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Some code crumbs dropped along my coding &lt;path&#47;&gt;">
+        <meta name="keywords" content="Eleventy, Web Components, JS, HTML, JavaScript, SVG" />
+        <meta name="generator" content="Eleventy">
+        <meta name="author" content="Pierre Plaissy">
+
+        <meta webc:if="this.page.url.includes('posts')" property="og:title" :content="title" />
+        <meta webc:if="this.page.url.includes('posts')" property="og:type" content="article" />
+        <meta webc:if="this.page.url.includes('posts')" property="og:URL" :content="url(this.page.url)" />
+        <meta webc:if="this.page.url.includes('posts')" property="og:image" :content="url(image.path)" />
+        <meta webc:if="this.page.url.includes('posts')" property="og:description" :content="description" />
+
+        <title>Code crumbs</title>
+        <link rel="icon" href="assets/img/favicon.ico" />
+        <link rel="stylesheet" href="assets/css/main.css" webc:keep/>
+        <link rel="stylesheet" href="assets/css/posts.css" webc:keep/>
+    </head>
+    <body>
+        <header webc:nokeep></header>
+        <div class="main-container">
+            <div class="content" @html="content" webc:nokeep></div>
+        </div>
+    </body>
+</html>
