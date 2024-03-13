@@ -8,12 +8,6 @@
 ---
 
 <div>
-    <div class="welcome">
-        <p>Welcome home !
-            <br>
-            A single room here for code cooking pleasure without any cookie
-        </p>
-    </div>
     <ul class="posts-list">
         <li class="post-item" webc:for="post of collections.posts">
             <img class="post-thumb" :src="post.data.image.path" :alt="post.data.image.alt">

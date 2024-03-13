@@ -1,15 +1,14 @@
 <nav class="header">
   <div class="avatar">
     <img class="profile-img mr" src="assets/img/me.png" alt="me">
-    <!-- <span class="copy" @html="'&copy; ' + currentYear() + ' P. Plaissy'"></span> -->
   </div>
   <div class="title">
     <div class="main">
-      <a class="nav-item mr" href="#">code crumbs...</a>
+      <a class="nav-item mr" href="#">TITLE</a>
       <linkedin></linkedin>
     </div>
     <div class="epigraph">
-      <span>Some code crumbs dropped along my coding &lt;path&#47;&gt;</span>
+      <span>Stuff I'm interested in</span>
     </div>
   </div>
 </nav>

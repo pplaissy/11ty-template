@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addJavaScriptFunction("url", (subUrl) => {
     if (!subUrl.startsWith('/')) subUrl = '/' + subUrl;
-    return "https://code-crumbs.pplaissy.fr" + subUrl;
+    return "https://your-main-url" + subUrl;
   });
 
   // eleventyConfig.addJavaScriptFunction("currentYear", () => {

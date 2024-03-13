@@ -39,15 +39,6 @@ body {
     scrollbar-width: thin;
 }
 
-.welcome {
-	font-weight: 300;
-    font-size: larger;
-	background-color: #f5f3f1;
-    padding: 0.1rem;
-    margin-top: 1rem;
-    text-align: center;
-}
-
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
 	.main-container {width: 100vw;}
