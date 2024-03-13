@@ -5,7 +5,7 @@ tags: published
 description: "How I did my first post"
 date: 2024-02-22
 image: 
-    path: assets/img/first/first.png
+    path: assets/img/first/first.svg
     alt: first thumbnail
 ---
 How I did my first post

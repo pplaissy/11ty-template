@@ -15,7 +15,7 @@
         <meta webc:if="this.page.url.includes('posts')" property="og:image" :content="url(image.path)" />
         <meta webc:if="this.page.url.includes('posts')" property="og:description" :content="description" />
 
-        <title>Code crumbs</title>
+        <title>My Tiny Blog</title>
         <link rel="icon" href="assets/img/favicon.ico" />
         <link rel="stylesheet" href="assets/css/main.css" webc:keep/>
         <link rel="stylesheet" href="assets/css/posts.css" webc:keep/>
