@@ -31,8 +31,8 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          token:  ${{ secrets.SECRETNAME }}
-          repository-name: pplaissy/code-crumbs-site
+          token:  ${{ secrets.MY_SECRET_NAME }}
+          repository-name: your-repo-name
           branch: main # The branch the action should deploy to.
           folder: _site # The folder the action should deploy.
           single-commit: true
